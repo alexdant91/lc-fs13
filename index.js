@@ -20,6 +20,11 @@ const { SERVER_PORT } = process.env;
  */
 app.use("/api", require("./api"));
 
+/**
+ * @path /auth
+ */
+app.use("/auth", require("./auth"));
+
 db.connect();
 
 app.listen(SERVER_PORT, () => {
