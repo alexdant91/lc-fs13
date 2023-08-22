@@ -11,4 +11,9 @@ app.use("/users", require("./routes/users"));
  */
 app.use("/me", require("./routes/me"));
 
+/**
+ * @path /api/gym
+ */
+app.use("/gym", require("./routes/gym"));
+
 module.exports = app;
